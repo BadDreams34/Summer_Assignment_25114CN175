@@ -1,11 +1,17 @@
 #include<iostream>
 using namespace std;
-int main(){
-    int n;
-    cout<<"Enter number :";
-    cin>>n;
-    for(int i = 1; i<=10 ; i++){
-        cout<< n << "x" << i << "=" << n*i << endl;
+int fact (int n){
+    if(n == 1){
+        return 1;
     }
+
+    return a*fact(n-1);
+}
+int main(){
+    int num;
+    cout<<"Enter number :";
+    cin>>num;
+    int f = fact(num);
+    cout<<"The factorial of "<<num<< " is "<< f;
     return 0;
 }
